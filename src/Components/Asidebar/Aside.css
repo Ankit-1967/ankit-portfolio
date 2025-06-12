@@ -1,0 +1,33 @@
+.sidebar_wrapper {
+    display: block;
+    width: 100%;
+    max-width: 30%;
+}
+
+.aside_image-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
+    margin: 0px auto;
+    border-radius: 50%;
+    background: rgb(0 0 0 / 13%);
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside_image-wrapper .aside_image {
+    display: block;
+    width: 100%;
+    max-width: calc(100% - 20px);
+    border-radius: 50%;
+    overflow: hidden;
+    height: calc(100% - 20px);
+}
+
+.aside_image-wrapper img{
+    display: block;
+    width:100%;
+
+}
