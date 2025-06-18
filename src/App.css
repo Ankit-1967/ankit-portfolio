@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +40,45 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+:root{
+
+/* Text Sizes  */
+
+--font-size-tiny : 10px;
+--font-size-extra-small : 12px;
+--font-size-small : 14px;
+--font-size-medium : 16px;
+--font-size-normal : 18px;
+--heading-h6 : var(--font-size-small);
+--heading-h5 : var(--font-size-normal);
+--heading-h4 : 20px;
+--heading-h3 : 24px;
+--heading-h2 : 28px;
+--heading-h1 : 32px;
+
+/* Font Weigths */
+
+--font-weight-el : 200;
+--font-weight-light: 300;
+--font-weight-regular : 400;
+--font-weight-medium:500;
+--font-weight-bold:600;
+--font-weight-extra-bold:700;
+--font-weight-bolder:800;
+
+/* colors */
+
+--color-white : rgb(255 255 255 );
+--color-black :rgb(0 0 0  );
+--aside-bg-color : rgb(37 38 57);
+
+
+}
+
+img{
+  display: block;
+  width: 100%;
+  object-fit: cover;
 }

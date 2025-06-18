@@ -1,14 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
-import Portfolio from './Icons/Portfolio';
+// import logo from './logo.svg';
+// import Portfolio from './Icons/Portfolio';
 import Aside from './Components/Asidebar/Aside.jsx';
 import './App.css';
+import Maincomponent from './Main Components/Maincomponent.jsx';
 
 function App() {
   return (
     <div className="App">
       <Aside/>
-      <header className="App-header">
+      <Maincomponent/>
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Portfolio/>
         <p>
@@ -22,7 +24,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }

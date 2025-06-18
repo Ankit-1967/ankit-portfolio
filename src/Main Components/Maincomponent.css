@@ -1,0 +1,8 @@
+.main-component {
+    margin-left: 300px;
+    display: block;
+    width: 100%;
+    max-width: calc(100% - 300px);
+    overflow-y: scroll;
+}
+

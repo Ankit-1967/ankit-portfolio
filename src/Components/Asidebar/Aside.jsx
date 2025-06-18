@@ -1,11 +1,13 @@
 import React from 'react'
 import './Aside.css';
 import Image from '../../Images/portfolio_image1.png';
+import SocialLinks from '../SocialLinks/SocialLinks.jsx';
+import MainLinks from '../NavigationLinks/MainLinks.jsx';
 // import Linkedin from '../../Icons/Linkdin'
 function Aside() {
   return (
     <>
-     <div>
+     <>
       <div className="sidebar_wrapper">
         <div className="sidebar">
           <div className="aside_image-wrapper">
@@ -14,14 +16,11 @@ function Aside() {
             </div>
           </div>
           <h2 className='asideName'>Ankit Thakur</h2>
-          <div className='aside-social_links_wrapper'>
-            <ul class="aside-social_links">
-              Ankit Thakur
-            </ul>
-          </div>
+          <SocialLinks/>
+          <MainLinks/>
         </div>
       </div>    
-    </div> 
+    </> 
     </>
   )
 }

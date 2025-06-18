@@ -1,7 +1,15 @@
 .sidebar_wrapper {
     display: block;
     width: 100%;
-    max-width: 30%;
+    max-width: 300px;
+    padding: 20px;
+    height: 100%;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    background: var(--aside-bg-color);
+    color: var(--color-white);
+    position: fixed;
+left: 0;
 }
 
 .aside_image-wrapper {
