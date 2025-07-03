@@ -15,7 +15,7 @@ function Aside() {
               <img src={Image} alt="aside_image"/>
             </div>
           </div>
-          <h2 className='asideName'>Ankit Thakur</h2>
+          <h3 className='asideName text-center'>Ankit Thakur</h3>
           <SocialLinks/>
           <MainLinks/>
         </div>

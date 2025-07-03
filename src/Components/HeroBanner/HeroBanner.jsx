@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import Banner_Image from '../../Images/Banner_image.png';
-import './MainBanner.css'
-function MainBanner({Image, Name = "Ankit Thakur" , text=["Ankit Thaur", "Frontend Developer", "Shopify Developer"]} ) {
+import './HeroBanner.css'
+function MainBanner({Image, Name = "Ankit Thakur" , text=["Ankit Thakur", "Frontend Developer", "Shopify Developer"]} ) {
   
 // const Text = "Hi i am a";
+const [displayText, setDisplayText] = useState('');
+
 const Text = text;
 const TextLen = Text.length;
-const TypingSpeed = .5; // in sec
-const [displayText, setDisplayText] = useState('');
- 
+const TypingSpeed = 2; // in sec
 useEffect(()=>{
   let CurrentIndex = 0;
   let StrIndex = 0;
@@ -40,26 +40,12 @@ useEffect(()=>{
       CurrentIndex = (CurrentIndex + 1 ) % TextLen;
     }
 
-    setTimeout(TypingText, TypingSpeed * 1000);
-
-  //   let word = Text[CurrentIndex];
-  //   CurrentText += word[StrIndex];
-  //   setDisplayText(CurrentText);
-  //   StrIndex++
-  //   if(StrIndex === word.length){
-  //     setTimeout(()=>{
-  //     CurrentIndex = (CurrentIndex + 1) % TextLen;
-  //     StrIndex = 0;
-  //     CurrentText = '';
-  //     TypingText();
-  //     }, TypingSpeed * 1000); 
-  //   }
-  //   else{
-  //     setTimeout(TypingText, TypingSpeed * 1000);
-  //   }
-    };
+    setTimeout(TypingText, TypingSpeed * 100);
+  };
+  
   TypingText();
-},TypingSpeed * 1000);
+
+}, TypingSpeed * 1000);
   
 
   return (

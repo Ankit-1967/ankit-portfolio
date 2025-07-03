@@ -2,8 +2,27 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: var(--body-font-family);
 }
+
+
 .App {
+  text-align: left;
+}
+
+.container {
+  display: block;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.section-conatiner{
+  padding:60px 0 ;
+}
+
+.text-center{
   text-align: center;
 }
 
@@ -44,6 +63,8 @@
 
 :root{
 
+
+  
 /* Text Sizes  */
 
 --font-size-tiny : 10px;
@@ -55,8 +76,8 @@
 --heading-h5 : var(--font-size-normal);
 --heading-h4 : 20px;
 --heading-h3 : 24px;
---heading-h2 : 28px;
---heading-h1 : 32px;
+--heading-h2 : 32px;
+--heading-h1 : 40px;
 
 /* Font Weigths */
 
@@ -67,6 +88,11 @@
 --font-weight-bold:600;
 --font-weight-extra-bold:700;
 --font-weight-bolder:800;
+
+/* Font Families */
+
+--heading-font-family : "Raleway , sans-serif";
+--body-font-family : "Roboto , sans-serif";
 
 /* colors */
 
@@ -81,4 +107,37 @@ img{
   display: block;
   width: 100%;
   object-fit: cover;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--heading-font-family);
+  font-weight:var(--font-weight-extra-bold);
+  line-height: 1.5;
+  letter-spacing: 1px;
+  color:currentColor;
+}
+
+h1{
+  font-size: var(--heading-h1);
+}
+
+h2{
+  font-size: var(--heading-h2);
+}
+
+h3{
+  font-size: var(--heading-h3);
+}
+
+h4{
+  font-size: var(--heading-h4);
+}
+
+h5{
+  font-size: var(--heading-h5);
+}
+
+h6{
+  font-size: var(--heading-h6);
 }

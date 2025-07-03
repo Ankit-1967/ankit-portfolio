@@ -1,0 +1,22 @@
+.image-with-text-wrapper, 
+.imagw-with-text-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.image-wrapper {
+    display: block;
+    width: 100%;
+    max-width: calc(33.33%  - 12px);
+}
+
+.text-wrapper {
+    display: block;
+    width: 100%;
+    max-width: calc(66.67%  - 12px);
+}
+
