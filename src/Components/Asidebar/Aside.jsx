@@ -4,11 +4,10 @@ import Image from '../../Images/portfolio_image1.png';
 import SocialLinks from '../SocialLinks/SocialLinks.jsx';
 import MainLinks from '../NavigationLinks/MainLinks.jsx';
 // import Linkedin from '../../Icons/Linkdin'
-function Aside() {
+function Aside({Class}) {
   return (
     <>
-     <>
-      <div className="sidebar_wrapper">
+      <aside className={`sidebar_wrapper ${Class}`}>
         <div className="sidebar">
           <div className="aside_image-wrapper">
             <div className="aside_image">
@@ -19,8 +18,7 @@ function Aside() {
           <SocialLinks/>
           <MainLinks/>
         </div>
-      </div>    
-    </> 
+      </aside>    
     </>
   )
 }

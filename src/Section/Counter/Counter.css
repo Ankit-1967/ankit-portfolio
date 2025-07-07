@@ -1,0 +1,9 @@
+.counter-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(--column-gap);
+    list-style: none;
+}

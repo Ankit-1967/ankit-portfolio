@@ -1,0 +1,63 @@
+.skills-wrapper{
+    background-color: #f4fafd;
+}
+
+.skills-list-wrapper .skill-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px 24px;
+    list-style: none;
+}
+
+
+.skills-list-wrapper .skill-list .skill-type {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 6px 24px;
+    font-size: var(--font-size-extra-small);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--heading-font-family);
+}
+
+.skills-list-wrapper .skill-list .skill-type .skill-val {
+    text-align: right;
+}
+.skills-list-wrapper .skill-list .skill-type .skill-counter {
+    height: 10px;
+    max-width: 100%;
+    background: #e9ecef;
+    transition: all .5s ease-in-out;
+    position: relative;
+    border-radius: 5px;
+}
+
+.skills-list-wrapper .skill-list .skill-type .skill-counter:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background: var(--color-light-blue);
+    animation: Skillcounter 4s ease-in-out 1  forwards;
+    border-radius: 5px;
+}
+
+
+@keyframes Skillcounter {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--scroll-length);
+  }
+}
+
+@media (max-width:767px){
+  
+}

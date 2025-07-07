@@ -18,7 +18,7 @@
   padding: 0px 15px;
 }
 
-.section-conatiner{
+.section-container{
   padding:60px 0 ;
 }
 
@@ -66,19 +66,21 @@
 
   
 /* Text Sizes  */
-
+--font-size-body : 16px;
+--font-size26: 26px;
 --font-size-tiny : 10px;
 --font-size-extra-small : 12px;
 --font-size-small : 14px;
 --font-size-medium : 16px;
 --font-size-normal : 18px;
 --heading-h6 : var(--font-size-small);
---heading-h5 : var(--font-size-normal);
---heading-h4 : 20px;
+--heading-h5 : 16px;
+--heading-h4 : 18px;
 --heading-h3 : 24px;
 --heading-h2 : 32px;
---heading-h1 : 40px;
-
+--heading-h1 : 64px;
+--row-gap : 20px;
+--column-gap : 24px;
 /* Font Weigths */
 
 --font-weight-el : 200;
@@ -99,7 +101,7 @@
 --color-white : rgb(255 255 255 );
 --color-black :rgb(0 0 0  );
 --aside-bg-color : rgb(37 38 57);
-
+--color-light-blue:#149ddd;
 
 }
 
@@ -109,11 +111,20 @@ img{
   object-fit: cover;
 }
 
+body{
+  font-size: var(--font-size-body);
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  font-family: var(--body-font-family); 
+}
+
 
 h1, h2, h3, h4, h5, h6{
   font-family: var(--heading-font-family);
   font-weight:var(--font-weight-extra-bold);
   line-height: 1.5;
+  margin-bottom: 8px;
   letter-spacing: 1px;
   color:currentColor;
 }
@@ -140,4 +151,62 @@ h5{
 
 h6{
   font-size: var(--heading-h6);
+}
+
+
+.fs-italic{
+  font-style: italic;
+}
+
+.half-width{
+width: 100%;
+max-width: calc(50% - (var(--column-gap) / 2));  
+}
+
+.full-width{
+  width:100%;
+  max-width: 100%;
+}
+
+/* menu */
+
+sapn.menu-btn {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: var(--color-light-blue);
+    color: var(--color-white);
+}
+
+.menu-btn svg{
+  scale:1;
+  animation: Scaleup .2s linear 1 forwards ;
+}
+
+@keyframes Scaleup {
+  0%{
+    scale:0;
+  }
+
+  100%{
+    scale:1;
+  }
+}
+
+@media (max-width:767px){
+  .half-width{
+    max-width: 100%;
+  }
+
+  .section-container{
+    padding: 40px 0;
+  }
 }

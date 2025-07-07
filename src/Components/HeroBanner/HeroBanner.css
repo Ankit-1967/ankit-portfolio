@@ -20,7 +20,7 @@
     bottom: 30%;
     text-align: left;
     color: var(--color-white);
-    width: 300px;
+    width: fit-content;
     padding: 0 15px;
 }
 

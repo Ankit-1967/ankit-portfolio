@@ -1,0 +1,50 @@
+.counter-item {
+    --gap: 16px;
+    --counter-gap: calc(var(--column-gap) * 3 / 4 );
+    display: flex;
+    width: 100%;
+    max-width: calc(25% - var(
+    --counter-gap));
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: var(
+    --gap);
+}
+
+.counter-item .counter-icon {
+    display: block;
+    width: 100%;
+    max-width: 44px;
+    color: var(--color-light-blue);
+}
+
+.counter-item .counter-icon svg {
+    height: 44px;
+    width: 44px;
+}
+
+.counter-details {
+    display: block;
+    width: 100%;
+    max-width: calc(100% - (44px + var(--gap)));
+}
+
+.counter {
+    font-size: 48px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+@media(max-width:767px){
+    .counter-item{
+        max-width: calc(50% - var(--counter-gap));
+    }
+}
+
+@media (max-width:425px){
+    .counter-item{
+        max-width: 100%;
+    }
+}
