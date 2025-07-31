@@ -7,31 +7,30 @@ import People from '../../Icons/People.jsx';
 
 function CounterItem() {
     useEffect(() =>{
-    let CounterNumber = document.querySelectorAll('[counter-data]');
-    CounterNumber.forEach((i) => {
-        let counterContent = i.getAttribute('counter-data');
-        let Number = parseFloat(counterContent);
-        let Suffix = counterContent.replace(Number,"");
-        console.log(Number);
+    const Duration = 4000; // total duration in ms
+  const Steps = Duration / 40; // number of animation steps (100 updates if 40ms interval)
+  const CounterNumber = document.querySelectorAll('[counter-data]');
 
-        let CurrentNumber = 0;
-        const Duration = 4000;
-        const Steps = Duration / 30;
-        const Increment = Math.ceil(Number / Steps) ;
-        const interval = setInterval(() => {
-            CurrentNumber += Increment;
-            if(CurrentNumber >= Number){
-                i.textContent = Number + Suffix;
-                clearInterval(interval); 
-            }
-            else{
-                i.innerHTML = CurrentNumber + Suffix;
-            }
-        }, 40);
-       
-        });
-    console.log(document.querySelectorAll('[counter-data]').length);
-},[]);
+  CounterNumber.forEach((i) => {
+    const counterContent = i.getAttribute('counter-data');
+    const Number = parseFloat(counterContent);
+    const Suffix = counterContent.replace(Number, '');
+    let CurrentNumber = 0;
+
+    const Increment = Number / Steps;
+
+    const interval = setInterval(() => {
+      CurrentNumber += Increment;
+      if (CurrentNumber >= Number) {
+        i.textContent = Number + Suffix;
+        clearInterval(interval);
+      } else {
+        i.innerHTML = Math.floor(CurrentNumber) + Suffix;
+      }
+    }, 40); // update every 40ms
+  });
+}, []);
+
   return (
     <>
         <li className="counter-item">

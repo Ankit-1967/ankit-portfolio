@@ -1,0 +1,46 @@
+
+.service-item {
+    --gap: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: var(--gap);
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.service-icon {
+    display: inline-flex;
+    width: 100%;
+    max-width: 40px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    background: var(--border-color);
+    border-radius: 10px;
+    color: var(--color-white);
+    transition: all .5s ease-in-out;
+}
+
+.service-content {
+    display: block;
+    width: 100%;
+    max-width: calc(100% - (var(--gap) + 40px));
+}
+
+.service-content a {
+    color: currentColor;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+}
+
+.service-title {
+    margin-bottom: 15px;
+}
+
+.service-description {
+    margin-bottom: 16px;
+}

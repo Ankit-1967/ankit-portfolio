@@ -50,7 +50,7 @@ useEffect(()=>{
 
   return (
     <>
-      <div className='main-banner-wrapper'>
+      <section className='main-banner-wrapper'>
           <div className='main-banner'>
               <img src={Image || Banner_Image} alt="Banner_Image"/>
           </div>
@@ -63,7 +63,7 @@ useEffect(()=>{
               <p className='author_details'>I am <span className='typing_text'>{displayText}</span><span className='blinker'></span></p>
             </div>
           </div>
-      </div>
+      </section>
     </>
   )
 }

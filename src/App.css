@@ -76,7 +76,7 @@
 --heading-h6 : var(--font-size-small);
 --heading-h5 : 16px;
 --heading-h4 : 18px;
---heading-h3 : 24px;
+--heading-h3 : 26px;
 --heading-h2 : 32px;
 --heading-h1 : 64px;
 --row-gap : 20px;
@@ -93,15 +93,18 @@
 
 /* Font Families */
 
---heading-font-family : "Raleway , sans-serif";
---body-font-family : "Roboto , sans-serif";
+--heading-font-family : "Raleway" , sans-serif;
+--body-font-family : "Roboto" , sans-serif;
 
 /* colors */
 
---color-white : rgb(255 255 255 );
---color-black :rgb(0 0 0  );
---aside-bg-color : rgb(37 38 57);
+--color-white : #ffffff;
+--color-black :#000000;
+--aside-bg-color : rgb(37, 38, 57);
 --color-light-blue:#149ddd;
+--body-text-color: #272829;
+--section-bg-blue: #f4fafd;
+--border-color : var(--color-light-blue);
 
 }
 
@@ -117,6 +120,7 @@ body{
   line-height: 1.5;
   text-align: left;
   font-family: var(--body-font-family); 
+  color:#272829;
 }
 
 
@@ -126,7 +130,7 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.5;
   margin-bottom: 8px;
   letter-spacing: 1px;
-  color:currentColor;
+  color:#050d18;
 }
 
 h1{
@@ -153,9 +157,35 @@ h6{
   font-size: var(--heading-h6);
 }
 
+p{
+  font-size: var(--font-size-body);
+  color: var(--body-text-color); 
+}
 
 .fs-italic{
   font-style: italic;
+}
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--row-gap) var(--column-gap);
+
+}
+
+.flex-row-2 .flex-item{
+  width: 100%;
+  max-width:calc(50% - (var(--column-gap)  / 2));
+}
+
+.flex-row-3 .flex-item{
+  width: 100%;
+  max-width:calc(33.3% - (var(--column-gap) * 2 / 3));
+}
+
+.flex-row-4 .flex-item{
+  width: 100%;
+  max-width:calc(25% - (var(--column-gap) * 3 / 4));
 }
 
 .half-width{
@@ -201,6 +231,22 @@ sapn.menu-btn {
   }
 }
 
+@media screen and (max-width:1024px){
+  .flex-row-3 .flex-item{
+    max-width:100;
+  }
+
+  .flex-row-3 .flex-item{
+    width: 100%;
+    max-width:calc(50% - (var(--column-gap) / 2));
+  }
+
+.flex-row-4 .flex-item{
+  width: 100%;
+  max-width:calc(33.33% - (var(--column-gap) * 2 / 3));
+}
+}
+
 @media (max-width:767px){
   .half-width{
     max-width: 100%;
@@ -209,4 +255,19 @@ sapn.menu-btn {
   .section-container{
     padding: 40px 0;
   }
+
+  .flex-row-3 .flex-item{
+  width: 100%;
+  max-width:100%;
+}
+
+.flex-row-4 .flex-item{
+  width: 100%;
+  max-width:100%;
+}
+}
+
+body .swiper-pagination {
+  position: static;
+  margin-top: 15px;
 }

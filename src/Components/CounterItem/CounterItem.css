@@ -41,6 +41,10 @@
     .counter-item{
         max-width: calc(50% - var(--counter-gap));
     }
+
+    .counter{
+        font-size: 35;
+    }
 }
 
 @media (max-width:425px){
