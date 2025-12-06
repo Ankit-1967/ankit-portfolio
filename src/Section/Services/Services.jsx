@@ -5,7 +5,7 @@ import ServiceItem from '../../Components/ServiceItem/ServiceItem';
 function Services() {
   return (
     <>
-        <section className='services-wrapper '>
+        <section className='services-wrapper section-container pt-0'>
             <div className='container'>
                 <div className="services-heading">
                     <SectionHeading 

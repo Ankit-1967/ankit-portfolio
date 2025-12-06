@@ -8,7 +8,7 @@ function SocialLinks() {
         <ul className='social_links'>
             {SocialData.map((item, index) => (
                 <li key={index} className='social_link-wrapper'>
-                    <a className='social_link' href={item.Address} title={item.Type}>
+                    <a className='social_link' href={item.Address} title={item.Type} target='_blank'rel="noopener noreferrer" >
                       <span className='social_link_icon' style={{width:"30px", height:"30px"}}> {item.Symbol}</span>  
                     </a>
                 </li>

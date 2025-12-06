@@ -40,6 +40,7 @@ function Testimonials() {
                 autoplay={{
                     delay: 3000, // Delay between slides in milliseconds
                     disableOnInteraction: false, // Continue autoplay after user interaction
+                    pauseOnMouseEnter: true
                 }}
                 className="mySwiper"
                 breakpoints={{

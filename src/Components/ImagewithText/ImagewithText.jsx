@@ -12,7 +12,7 @@ function ImageWithText() {
     <>
       <div className='image-with-text-wrapper'>
         <div className="image-wrapper">
-          <img src={ AboutImage }  alt="About Image"/>
+          <img src={ AboutImage }  alt="About"/>
         </div>
         <div className="text-wrapper">
           <h3 className="heading">UI/UX Designer & Web Developer.</h3>

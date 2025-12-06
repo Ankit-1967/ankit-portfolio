@@ -33,7 +33,6 @@ function ContactForm() {
         <label htmlFor="name" className="block font-medium">Name</label>
         <input
           type="text"
-          placeholder='Enter Your Name'
           id="name"
           {...register('name', { required: 'Name is required' })}
           className="full-width border p-2 rounded"
@@ -44,7 +43,6 @@ function ContactForm() {
         <label htmlFor="email" className="block font-medium">Email</label>
         <input
           type="email"
-          placeholder='Enter Your Email'
           id="email"
           {...register('email', {
             required: 'Email is required',
@@ -61,7 +59,6 @@ function ContactForm() {
         <label htmlFor="subject" className="block font-medium">Subject</label>
         <input
           type="text"
-          placeholder='Enter Subject'
           id="subject"
           {...register('subject', { required: 'Subject is required' })}
           className="full-width border p-2 rounded"
@@ -73,7 +70,6 @@ function ContactForm() {
         <label htmlFor="message" className="block font-medium">Message</label>
         <textarea
           id="message"
-          placeholder='Enter Message Here'
           rows="6"
           {...register('message', { required: 'Message is required' })}
           className="full-width border p-2 rounded"

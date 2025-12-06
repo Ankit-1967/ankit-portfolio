@@ -1,0 +1,22 @@
+.section-heading.form-heading {
+    padding: 0;
+}
+
+.section-heading.form-heading:after {
+    content: unset;
+}
+
+.review-form-wrapper {
+    padding: 60px 0px;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    position: relative;
+}
+
+.review-form-wrapper:before {
+    content: '';
+    inset: 2px;
+    border: 1px solid var(--border-color);
+    position: absolute;
+    border-radius: 8px;
+}
