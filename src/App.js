@@ -1,4 +1,5 @@
 import React, {useState, useEffect} from 'react';
+import { BrowserRouter } from "react-router-dom";
 // import logo from './logo.svg';
 // import Portfolio from './Icons/Portfolio';
 import Aside from './Components/Asidebar/Aside.jsx';
@@ -38,7 +39,7 @@ const ToggleMenu = () => {
 );
 };
   return (
-    <>
+  <BrowserRouter basename="/ankit-portfolio">
     <main className="App">
       <sapn className="menu-btn" onClick={ ToggleMenu }>
         {active}
@@ -61,7 +62,7 @@ const ToggleMenu = () => {
         </a>
       </header> */}
     </main>
-    </>
+  </BrowserRouter>
   );
 }
 
