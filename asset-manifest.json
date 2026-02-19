@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ankit-portfolio/static/css/main.9083e8be.css",
+    "main.js": "/ankit-portfolio/static/js/main.f9ebd422.js",
+    "static/js/453.6cdd21cd.chunk.js": "/ankit-portfolio/static/js/453.6cdd21cd.chunk.js",
+    "static/media/portfolio_image1.png": "/ankit-portfolio/static/media/portfolio_image1.2de041bbf42c356b51e2.png",
+    "static/media/Banner_image.png": "/ankit-portfolio/static/media/Banner_image.5f9fb775bf70c3fb8171.png",
+    "index.html": "/ankit-portfolio/index.html",
+    "main.9083e8be.css.map": "/ankit-portfolio/static/css/main.9083e8be.css.map",
+    "main.f9ebd422.js.map": "/ankit-portfolio/static/js/main.f9ebd422.js.map",
+    "453.6cdd21cd.chunk.js.map": "/ankit-portfolio/static/js/453.6cdd21cd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9083e8be.css",
+    "static/js/main.f9ebd422.js"
+  ]
+}
